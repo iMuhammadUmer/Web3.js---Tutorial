@@ -8,8 +8,7 @@ web3.eth.getBalance(address, (err, wei) => {
   if (err) {
     alert("There is an error ", err);
   } else {
-    alert("Wei ", wei);
     let balance = web3.utils.fromWei(wei, "ether");
-    alert("Balance ", balance);
+    alert("Wei: " + wei + " Ether: " + balance);
   }
 });
